@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:exm="http://www.exam.labd" targetNamespace="http://www.exam.labd">
+	<element name="examen">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" ref="exm:exercice"/>
+			</sequence>
+		</complexType>
+	</element>
+	<element name="exercice" type="string"/>
+</schema>
+
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.exam.labd" targetNamespace="http://www.exam.labd">
+	<xsd:element name="examen">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" ref="exercice"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="exercice" type="xsd:string"/>
+</xsd:schema>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema targetNamespace="http://www.a.com" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:a="http://www.a.com" xmlns:b="http://www.b.com">
+	<import namespace="http://www.b.com" schemaLocation="file:///home/m1/boukrou/M1S2/LABD/tp4/b.xsd"/>
+	<element name="A">
+		<complexType>
+			<sequence>
+				<element ref="b:B"/>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

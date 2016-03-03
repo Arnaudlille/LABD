@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<transpole>
+	<choix_itineraire>
+		<depart ville="Seclin">	
+			<lieu> Centre hospitalier</lieu>
+		</depart>
+		<arrivee ville="Roubaix">
+			<lieu>Avenue Motte	</lieu>
+		</arrivee>
+		<date>
+			<jour j="Mardi">22</jour>
+			<mois>01</mois>
+			<heure>
+				<h>12</h>
+				<m>35</m>
+			</heure>
+		</date>
+		<mode>Métro-Tramway-Bus-Car</mode>
+		<preference>Arriver le plus rapidement</preference>
+		<vitesse>Normale</vitesse>
+	</choix_itineraire>
+	
+	<itineraire>
+		<etape>
+			<depart ville="">
+				<lieu>	</lieu>
+			</depart>
+			<arrivee ville="">
+				<lieu>	</lieu>
+			</arrivee>
+			<mode></mode>
+			<temps_estime></temps_estime>
+		</etape>
+	</itineraire>
+
+</transpole>

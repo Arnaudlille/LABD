@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liste_de_pays>
+<pays>
+	<nom>France</nom>
+	<capitale>Paris</capitale>
+	<population année="2007">64 102 000</population>
+</pays>
+<pays>
+	<nom>Italie</nom>
+	<capitale>Rome</capitale>
+	<population année="2006">58 133 509</population>
+</pays>
+<pays>	
+	<nom>Espagne</nom>
+	<capitale>Madrid</capitale>
+	<population année="2006">44 708 964</population>
+</pays>
+</liste_de_pays>

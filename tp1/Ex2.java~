@@ -1,0 +1,38 @@
+import org.xml.sax.* ;
+import org.xml.sax.helpers.* ;
+
+public class Ex2 extends DefaultHandler {	
+    private int surface;
+    private boolean fermante;
+	
+    public void startDocument() {
+	this.surface = 0;
+	this.fermante = false;
+    }
+	
+    public void endDocument() {
+	System.out.println("Surface : " + surface);
+    }
+	
+    public void startElement(String nameSpaceURI, String localName, String rawName, Attributes attributs){
+	if (this.fermante) System.out.print(" , ");
+	System.out.println(localName + "-" + "( "); 
+	this.fermante = false ;
+    }
+	
+    public void endElement(String nameSpaceURI, String localName, String rawName)  {
+	System.out.print(" )"); 
+	this.fermante = true;       
+    }
+	
+    public static void main(String[] args) {
+	try {
+	    XMLReader saxReader = XMLReaderFactory.createXMLReader();
+	    saxReader.setContentHandler(new Ex2());
+	    saxReader.parse(args[0]);
+	} catch (Exception t) {
+	    t.printStackTrace();
+	}
+    }
+	
+}

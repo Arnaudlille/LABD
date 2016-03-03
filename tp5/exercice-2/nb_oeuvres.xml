@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artistes xmlns="http://labd/art">
+   <artiste>
+      <nom>Picasso Pablo</nom>
+      <nb-oeuvre>1</nb-oeuvre>
+   </artiste>
+   <artiste>
+      <nom>Miro Joan</nom>
+      <nb-oeuvre>3</nb-oeuvre>
+   </artiste>
+   <artiste>
+      <nom>Magritte René</nom>
+      <nb-oeuvre>1</nb-oeuvre>
+   </artiste>
+   <artiste>
+      <nom>Blake Peter</nom>
+      <nb-oeuvre>0</nb-oeuvre>
+   </artiste>
+   <artiste>
+      <nom>Johns Jasper</nom>
+      <nb-oeuvre>1</nb-oeuvre>
+   </artiste>
+</artistes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="typeOp">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="+"/>
+			<xs:enumeration value="-"/>
+			<xs:enumeration value="/"/>
+			<xs:enumeration value="*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:complexType name="Operande">
+		<xs:choice minOccurs="2" maxOccurs="2">
+			<xs:element name="cons" type="xs:integer"/>
+			<xs:element name="var" type="xs:string"/>
+			<xs:element name="op" type="Operande"/>
+		</xs:choice>
+		<xs:attribute name="val" type="typeOp" use="required"/>
+	</xs:complexType>
+	
+	<xs:element name="expr">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="op" type="Operande"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+</xs:schema>

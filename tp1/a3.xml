@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE A SYSTEM "/home/m1/boukrou/M1S2/LABD/tp1/d3.dtd">
+
+<A>
+	<B>
+		<C>8</C>
+	</B>
+	
+	<!-- On déplace le B en commentaire et ça marche -->
+	<B/>
+	
+	<D>
+		<F>9</F>
+		<F>10</F>
+	</D>
+	
+	<!--   <B/> -->
+	
+	<D>
+		<F>11</F>
+	</D>
+</A>
+
+
+<!-- Ici on a une erreur car on attend de 1 à infini B suivi de 1 ou infini D puis 0 ou infini F, 
+or on a à la base B/D/B/D ce qui est faux par rapport au DTD -->

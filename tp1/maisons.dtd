@@ -1,0 +1,20 @@
+
+<!ELEMENT maisons (maison+)>
+<!ELEMENT maison (RDC+,etage+)>
+<!ATTLIST maison id CDATA #REQUIRED>
+
+<!ELEMENT RDC (cuisine*,wc*,sejour*,bureau*,garage*)>
+<!ELEMENT cuisine (#PCDATA)>
+<!ELEMENT wc (#PCDATA)>
+
+<!ELEMENT sejour (#PCDATA)>
+
+<!ELEMENT bureau (#PCDATA)>
+<!ELEMENT etage (terasse*, chambre*,salledeBain*,mirador*)>
+<!ELEMENT terasse (#PCDATA)>
+<!ELEMENT mirador (#PCDATA)>
+<!ELEMENT salledeBain (#PCDATA)>
+<!ELEMENT chambre (#PCDATA | alcove)*>
+<!ELEMENT alcove (#PCDATA)>
+ 
+

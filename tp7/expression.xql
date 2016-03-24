@@ -76,6 +76,24 @@ declare function local:evalVar($noeud as node(), $variables as xs:string) as xs:
 };
 (:Q3 fin :)
 
+(:Q4 debut :)
+declare function local:simplifie($name as xs:string, $variables as xs:string) as element() {
+	local:simplifieNode(doc($name)//expr/*, $variables)
+};
+
+declare function local:simplifieNode($noeud as node(), $variables as xs:string) {
+	if (string(node-name($noeud)) = "op") then 
+		let $val1 := local:evalNodeVar($noeud/*[1], $variables)
+		let $val2 := local:evalNodeVar($noeud/*[2], $variables)
+		return local:calculer($val1, string($noeud/@val, $val2)
+	else if (string(node-name($noeud)) = "var") then
+		local:simplifieVar($noeud, $variables)
+	else
+		
+		
+};
+(:Q4 fin :)
+
 (:Q1 local:print($nomFichier):)
 (:Q2 local:eval($constFichier):)
 (:Q3 :)local:eval-var($nomFichier, $variables)
